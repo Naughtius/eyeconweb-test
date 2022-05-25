@@ -1,0 +1,53 @@
+@import '../../../styles/mixins.scss';
+
+.item {
+  border-radius: $c-border;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(17, 24, 39, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_name {
+    line-height: 20px;
+    color: $c-dark;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &_info {
+    padding: 8px;
+    width: 100%;
+  }
+
+  &_img {
+    background-color: $c-dark;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+  }
+
+  &_rating {
+    padding: 2px 4px;
+    background-color: $c-orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    margin-top: -8px;
+    border-radius: 2px;
+
+    &_text {
+      color: $c-white;
+      font-size: 12px;
+      padding-left: 4px;
+    }
+  }
+
+  &_btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../styles/mixins.scss';
+
+.banner {
+  background: $c-green-gradient;
+  border-radius: $c-border;
+  padding: 8px 15px;
+  display: flex;
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  &_title {
+    margin-bottom: 4px;
+    line-height: 20px;
+    color: $c-white;
+  }
+
+  &_text {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

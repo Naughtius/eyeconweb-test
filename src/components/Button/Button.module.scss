@@ -1,0 +1,25 @@
+@import '../../styles/mixins.scss';
+
+.button {
+  text-align: center;
+  border-radius: $c-border;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  font-weight: 500;
+
+  &._green {
+    background-color: $c-green;
+    color: $c-white;
+  }
+
+  &._green-light {
+    background-color: $c-green-light;
+    color: $c-green;
+  }
+}

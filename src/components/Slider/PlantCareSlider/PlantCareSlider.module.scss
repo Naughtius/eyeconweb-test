@@ -1,0 +1,38 @@
+@import '../../../styles/mixins.scss';
+
+.slider {
+  padding-left: 8px;
+  overflow: hidden;
+
+  &_title {
+    font-size: 18px;
+    color: $c-dark;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+
+  &_item {
+    width: 240px;
+  }
+
+  :global {
+    .slick-slide {
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &_link {
+    color: $c-green;
+    cursor: pointer;
+  }
+
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8px;
+  }
+}

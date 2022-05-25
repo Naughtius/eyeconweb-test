@@ -1,0 +1,40 @@
+@import '../../../styles/mixins.scss';
+
+.item {
+  &_img {
+    height: 208px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+    border-radius: 8px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &_info {
+    margin-top: 8px;
+  }
+
+  &_title {
+    line-height: 20px;
+    color: $c-dark;
+    margin-bottom: 4px;
+  }
+
+  &_bottom {
+    display: flex;
+    color: $c-grey;
+  }
+
+  &_views {
+    display: flex;
+    margin-left: 8px;
+
+    &_text {
+      margin-left: 2px;
+    }
+  }
+}

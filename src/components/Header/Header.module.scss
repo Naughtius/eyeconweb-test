@@ -1,0 +1,42 @@
+@import '../../styles/mixins.scss';
+
+.header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: $c-dark;
+
+  &_right {
+    display: flex;
+    align-items: center;
+  }
+
+  &_search {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  &_burger {
+    cursor: pointer;
+    margin-left: 25px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  &_language {
+    cursor: pointer;
+    color: $c-white;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  &_logo {
+    display: flex;
+    align-items: center;
+  }
+}
